@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,700,900');
+* {
+  box-sizing: border-box;
+}
+
+body {}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 50px;
+  background: url(../img/header-bg.jpg) no-repeat 100% 0;
+  background-size: cover;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(38, 38, 38);
+  line-height: 25px;
+}
+
+.nav__logo {
+  font-family: Pacifico, sans-serif;
+  font-size: 50px;
+  color: rgb(38, 38, 38);
+}
+
+.nav__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  width: 557px;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.nav__menu-item {
+  position: relative;
+}
+
+.nav__link--line::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 0;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: rgb(255, 96, 51);
+}
+
+.nav__link {
+  color: rgb(38, 38, 38);
+}
+
+.header__info {
+  margin-top: 283px;
+  width: 370px;
+  font-family: Raleway, sans-serif;
+  color: rgb(38, 38, 38);
+}
+
+.header__info-title {
+  margin: 0;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 25px;
+}
+
+.header__info-text {
+  margin: 34px 0 31px;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 27px;
+}
+
+.header__info-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 55px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(255, 96, 51);
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.header__info-button-text {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 27px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+
+/*block1*/
+
+.block1 {
+  height: 700px;
+  background-image: radial-gradient(circle at 0 0, rgb(0, 196, 196), rgb(0, 183, 183) 32%, rgb(0, 173, 173) 68%, rgb(0, 156, 156)), linear-gradient(rgb(0, 196, 196), rgb(0, 196, 196));
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.block1__img {
+  margin-left: -10px;
+}
+
+.block1__info {
+  width: 480px;
+  font-family: Raleway, sans-serif;
+  line-height: 27px;
+  color: rgb(255, 255, 255);
+}
+
+.block1__info-title {
+  font-size: 90px;
+  font-weight: bold;
+}
+
+.block1__info-text {
+  font-size: 17px;
+  font-weight: 300;
+}
