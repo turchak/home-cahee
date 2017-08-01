@@ -38,7 +38,7 @@ a {
   color: rgb(38, 38, 38);
 }
 
-.nav__menu {
+.menu {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -52,11 +52,11 @@ a {
   list-style: none;
 }
 
-.nav__menu-item {
+.menu-item {
   position: relative;
 }
 
-.nav__link--line::before {
+.menu__link--line::before {
   content: "";
   position: absolute;
   top: -7px;
@@ -67,7 +67,7 @@ a {
   background: rgb(255, 96, 51);
 }
 
-.nav__link {
+.menu__link {
   color: rgb(38, 38, 38);
 }
 
