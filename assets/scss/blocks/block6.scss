@@ -1,6 +1,9 @@
 .container6 {
   height: 866px;
   font-family: Raleway, sans-serif;
+  @include mobile-p {
+    height: 100%;
+  };
 }
 
 .block6 {
@@ -15,10 +18,8 @@
     &-title {
       font-size: 90px;
       font-weight: 700;
-      @include mobile-p {
-        margin: 0;
-        padding: 50px 0;
-      };
+      margin: 0;
+      padding: 50px 0;
     }
 
     &-text {
