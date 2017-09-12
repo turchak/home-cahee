@@ -1,0 +1,34 @@
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  color: #b9b9b9;
+  line-height: 25px;
+  @include mobile-p {
+    flex-wrap: wrap;
+  };
+}
+
+.footer {
+  background: #262626;
+  font-family: Raleway, sans-serif;
+
+  &__copyright {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  &__logo {
+    font-family: Pacifico, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #ff2b58;
+  }
+
+  &__link {
+    color: #ff2b58;
+    font-size: 15px;
+    font-weight: 700;
+  }
+}

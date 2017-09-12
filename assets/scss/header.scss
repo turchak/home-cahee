@@ -1,0 +1,121 @@
+.header {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 50px;
+  background: url("../img/header-bg.jpg") no-repeat 100% 0;
+  background-size: cover;
+
+  &__info {
+    margin-top: 283px;
+    width: 370px;
+    font-family: Raleway, sans-serif;
+    color: rgb(38, 38, 38);
+    @include mobile-p {
+      margin-top: 405px;
+      width: 100%;
+    };
+
+    &-title {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 25px;
+    }
+
+    &-text {
+      margin: 34px 0 31px;
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 27px;
+    }
+
+    &-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 55px;
+      border: none;
+      padding: 0;
+      margin: 0;
+      background-color: rgb(255, 96, 51);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+
+      &-text {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 27px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(38, 38, 38);
+  line-height: 25px;
+
+  &__logo {
+    font-family: Pacifico, sans-serif;
+    font-size: 50px;
+    color: rgb(38, 38, 38);
+  }
+}
+.fa {
+  display: none;
+  @include mobile-p {
+    display: block;
+    font-size: 28px;
+  };
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  width: 557px;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  list-style: none;
+  @include mobile-p {
+    display: none;
+    &.active {
+      display: flex;
+      position: absolute;
+      top: 35px;
+      right: 0;
+      flex-direction: column;
+      align-items: flex-end;
+      height: 250px;
+    }
+  };
+  &__item {
+    position: relative;
+    transition: all 1s ease-out;
+
+    &:hover .menu__link--line::before {
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 3px;
+      background: rgb(255, 96, 51);
+    }
+  }
+
+  &__link {
+    color: rgb(38, 38, 38);
+  }
+}

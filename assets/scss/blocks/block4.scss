@@ -1,0 +1,75 @@
+.container4 {
+  height: 500px;
+  font-family: Raleway, sans-serif;
+}
+
+.block4 {
+  background: url("../img/block4.jpg") no-repeat 50% 50%;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 145px 0 163px;
+    @include mobile-p {
+      padding: 0;
+    };
+  }
+
+  &__text {
+    width: 540px;
+    @include mobile-p {
+      width: 100%;
+    };
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    @include  mobile-p {
+      flex-direction: column;
+      width: 100%;
+    };
+
+    &-input {
+      width: 570px;
+      height: 55px;
+      padding: 22px 15px;
+      color: rgb(38, 38, 38);
+      border: solid 1px rgb(38, 38, 38);
+      @include mobile-p {
+        width: 100%;
+      };
+
+      &::placeholder {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 27px;
+        color: rgba(38, 38, 38, 0.5);
+      }
+    }
+
+    &-button {
+      margin-left: 30px;
+      padding: 0;
+      width: 170px;
+      height: 55px;
+      background: #96b92c;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+      border: none;
+      @include mobile-p {
+        margin: 20px 0;
+      };
+
+      &-text {
+        font-family: Raleway, sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 27px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+      }
+    }
+  }
+}

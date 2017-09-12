@@ -1,0 +1,73 @@
+.block2 {
+  background: #70bfff;
+
+  &__menu {
+    display: inline-block;
+    width: 400px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 0;
+    vertical-align: top;
+  }
+
+  &__item {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+    height: 100px;
+
+    &-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      font-family: Raleway, sans-serif;
+      color: #262626;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 27px;
+      text-align: center;
+    }
+
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      flex-grow: 0;
+      min-width: 100px;
+      border-left: 1px solid rgb(157, 157, 157);
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    margin: 0;
+    padding-top: 173px;
+    padding-left: 220px;
+    font-family: Raleway, sans-serif;
+    color: #ffffff;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: right;
+    @include mobile-p {
+      padding: 0;
+      font-size: 75px;
+      padding: 40px 0;
+      line-height: 1;
+      text-align: left;
+    };
+  }
+}
+
+.container2 {
+  padding-top: 180px;
+  height: 790px;
+  background: url("../img/block2.png") no-repeat 100% 50%;
+  @include mobile-p {
+    height: 100%;
+  };
+}

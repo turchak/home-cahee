@@ -1,0 +1,104 @@
+.container6 {
+  height: 866px;
+  font-family: Raleway, sans-serif;
+}
+
+.block6 {
+  background: url("../img/block6-bg.jpg") no-repeat 50% 50%;
+  background-size: cover;
+
+  &__info {
+    text-align: center;
+    color: #262626;
+    line-height: 25px;
+
+    &-title {
+      font-size: 90px;
+      font-weight: 700;
+      @include mobile-p {
+        margin: 0;
+        padding: 50px 0;
+      };
+    }
+
+    &-text {
+      width: 350px;
+      font-size: 17px;
+      font-weight: 300;
+      margin: 0 auto;
+      @include mobile-p {
+        width: 100%;
+      };
+    }
+  }
+
+  &__content {
+    display: flex;
+    margin-top: 45px;
+    @include mobile-p {
+      flex-wrap: wrap;
+    };
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    @include mobile-p {
+      width: 100%;
+    };
+
+    &-input {
+      width: 500px;
+      height: 50px;
+      padding: 20px;
+      margin-bottom: 15px;
+      background: rgb(0, 196, 196);
+      color: #fff;
+      border: none;
+      font-size: 15px;
+      font-weight: bold;
+      @include mobile-p {
+        width: 100%;
+      };
+
+      &::placeholder {
+        font-size: 15px;
+        font-weight: 300;
+      }
+
+      &:focus {
+        border-left: 5px solid rgb(53, 91, 130);
+      }
+
+      &-textarea {
+        height: 250px;
+        resize: none;
+      }
+    }
+  }
+
+  &__contacts {
+    padding-left: 170px;
+    @include mobile-p {
+      padding: 0;
+    };
+  }
+
+  &__contact {
+    margin-bottom: 10px;
+    line-height: 25px;
+    color: rgb(38, 38, 38);
+
+    &-title {
+      margin: 0;
+      font-size: 17px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    &-text {
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
+}

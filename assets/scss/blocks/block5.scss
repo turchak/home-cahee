@@ -1,0 +1,135 @@
+.container5 {
+  height: 864px;
+  font-family: Raleway, sans-serif;
+  @include mobile-p {
+    height: 100%;
+  };
+}
+
+.block5 {
+  background: rgb(176, 124, 247);
+
+  &__info {
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+    &-title {
+      font-size: 90px;
+      font-weight: bold;
+      line-height: 25px;
+      @include mobile-p {
+        margin: 0;
+        padding: 50px 0;
+      };
+    }
+
+    &-text {
+      margin: 0 auto;
+      width: 563px;
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 25px;
+      @include mobile-p{
+        width: 100%;
+      };
+    }
+  }
+
+  &__gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 310px;
+    margin-top: 45px;
+    @include mobile-p {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 15px;
+      margin-right: 15px;
+    };
+    &--1 {
+      background: url("../img/block5-1.jpg") no-repeat 50% 50%;
+      @include mobile-p {
+        background-size: cover;
+      };
+    }
+
+    &--2 {
+      background: url("../img/block5-2.jpg") no-repeat 50% 50%;
+      @include mobile-p {
+        background-size: cover;
+      };
+    }
+
+    &--3 {
+      background: url("../img/block5-3.jpg") no-repeat 50% 50%;
+      @include mobile-p {
+        background-size: cover;
+      };
+    }
+
+    &-date {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 30px;
+      width: 60px;
+      height: 60px;
+      line-height: 25px;
+      color: rgb(255, 255, 255);
+      text-transform: uppercase;
+      border-radius: 5px;
+      background: rgba(38, 38, 38, 0.5);
+
+      &-day {
+        font-size: 32px;
+        font-weight: bold;
+      }
+
+      &-mounth {
+        font-size: 21px;
+        font-weight: 900;
+      }
+    }
+
+    &-text {
+      padding: 0 50px 23px 20px;
+      line-height: 25px;
+      color: rgb(255, 255, 255);
+    }
+
+    &-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    &-author {
+      font-size: 13px;
+      font-weight: 300;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 50px auto 0;
+    width: 200px;
+    height: 55px;
+    background: rgb(247, 43, 59);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    border: none;
+    @include mobile-p {
+      margin: 50px auto;
+    };
+
+    &-text {
+      font-family: Raleway, sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 25px;
+      color: rgb(255, 255, 255);
+      text-transform: uppercase;
+    }
+  }
+}
