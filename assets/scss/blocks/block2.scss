@@ -9,6 +9,9 @@
     list-style: none;
     font-size: 0;
     vertical-align: top;
+    @include mobile-p {
+      width: 100%;
+    };
   }
 
   &__item {

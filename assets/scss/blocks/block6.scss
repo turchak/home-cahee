@@ -20,6 +20,9 @@
       font-weight: 700;
       margin: 0;
       padding: 50px 0;
+      @include mobile-p {
+        font-size: 75px;
+      };
     }
 
     &-text {
